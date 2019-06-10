@@ -23,7 +23,7 @@ let createTodo = `mutation CreateTodo($input: CreateTodoInput!) {
 `;
 
 AWS.config.update({
-  region: env.AWS_REGION,
+  region: region,
   credentials: new AWS.Credentials(
     env.AWS_ACCESS_KEY_ID,
     env.AWS_SECRET_ACCESS_KEY,

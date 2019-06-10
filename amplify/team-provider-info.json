@@ -1,0 +1,14 @@
+{
+    "master": {
+        "awscloudformation": {
+            "AuthRoleName": "backend-graphql-master-20190610091720-authRole",
+            "UnauthRoleArn": "arn:aws:iam::244958302947:role/backend-graphql-master-20190610091720-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::244958302947:role/backend-graphql-master-20190610091720-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "backend-graphql-master-20190610091720-deployment",
+            "UnauthRoleName": "backend-graphql-master-20190610091720-unauthRole",
+            "StackName": "backend-graphql-master-20190610091720",
+            "StackId": "arn:aws:cloudformation:us-east-1:244958302947:stack/backend-graphql-master-20190610091720/391797b0-8b9b-11e9-bd2e-0e0a24f9b5c2"
+        }
+    }
+}

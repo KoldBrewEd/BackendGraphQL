@@ -1,0 +1,27 @@
+{
+	"api": {
+		"backendGraphQL": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "API_KEY"
+			}
+		}
+	},
+	"function": {
+		"backendgraphqlaf6a0b56": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"dependsOn": [
+				{
+					"category": "api",
+					"resourceName": "backendGraphQL",
+					"attributes": [
+						"GraphQLAPIIdOutput"
+					]
+				}
+			]
+		}
+	}
+}

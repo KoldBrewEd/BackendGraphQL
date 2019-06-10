@@ -1,0 +1,10 @@
+{
+    "permissions": {
+        "api": {
+            "backendGraphQL": [
+                "create",
+                "update"
+            ]
+        }
+    }
+}

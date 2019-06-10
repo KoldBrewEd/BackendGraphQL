@@ -1,0 +1,4 @@
+{
+    "AppSyncApiName": "backendGraphQL",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST"
+}

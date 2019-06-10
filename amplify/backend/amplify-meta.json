@@ -1,0 +1,62 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "backend-graphql-master-20190610091720-authRole",
+			"UnauthRoleArn": "arn:aws:iam::244958302947:role/backend-graphql-master-20190610091720-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::244958302947:role/backend-graphql-master-20190610091720-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "backend-graphql-master-20190610091720-deployment",
+			"UnauthRoleName": "backend-graphql-master-20190610091720-unauthRole",
+			"StackName": "backend-graphql-master-20190610091720",
+			"StackId": "arn:aws:cloudformation:us-east-1:244958302947:stack/backend-graphql-master-20190610091720/391797b0-8b9b-11e9-bd2e-0e0a24f9b5c2"
+		}
+	},
+	"api": {
+		"backendGraphQL": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "API_KEY",
+				"GraphQLAPIIdOutput": "fz33exgfunbtra4gnpapus4vhe",
+				"GraphQLAPIEndpointOutput": "https://pbceclyep5h3tiwwgvgf7xb36a.appsync-api.us-east-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-fjcn7gsk65hkzehpfe274oal34"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/backend-graphql-master-20190610091720-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apibackendGraphQL"
+			},
+			"lastPushTimeStamp": "2019-06-10T17:38:33.765Z",
+			"lastPushDirHash": "0o3c2fayp1xsnrqa6wEqILEegsw="
+		}
+	},
+	"function": {
+		"backendgraphqlaf6a0b56": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"dependsOn": [
+				{
+					"category": "api",
+					"resourceName": "backendGraphQL",
+					"attributes": [
+						"GraphQLAPIIdOutput"
+					]
+				}
+			],
+			"lastBuildTimeStamp": "2019-06-10T16:22:39.148Z",
+			"lastPackageTimeStamp": "2019-06-10T17:36:18.700Z",
+			"distZipFilename": "backendgraphqlaf6a0b56-1560188175-latest-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/backend-graphql-master-20190610091720-deployment/amplify-cfn-templates/function/backendgraphqlaf6a0b56-cloudformation-template.json",
+				"logicalId": "functionbackendgraphqlaf6a0b56"
+			},
+			"lastPushTimeStamp": "2019-06-10T17:38:33.768Z",
+			"output": {
+				"Region": "us-east-1",
+				"Arn": "arn:aws:lambda:us-east-1:244958302947:function:backendGraphQL-master",
+				"Name": "backendGraphQL-master"
+			},
+			"lastPushDirHash": "J0RbO7Z26QJJ/JAAfbv8DTwizjw="
+		}
+	}
+}

@@ -18,4 +18,3 @@ type Mutation @aws_api_key @aws_iam {
 ```
 
 5. Add IAM and additional authorization mode
-6. In Lambda add an environment variable called "AppSyncURL" with the API endpoint URL as value (https://github.com/aws-amplify/amplify-cli/issues/1620)

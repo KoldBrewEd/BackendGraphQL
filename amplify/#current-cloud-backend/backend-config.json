@@ -9,7 +9,7 @@
 		}
 	},
 	"function": {
-		"backendgraphqlaf6a0b56": {
+		"backendgraphql52d39904": {
 			"service": "Lambda",
 			"providerPlugin": "awscloudformation",
 			"build": true,
@@ -18,7 +18,8 @@
 					"category": "api",
 					"resourceName": "backendGraphQL",
 					"attributes": [
-						"GraphQLAPIIdOutput"
+						"GraphQLAPIIdOutput",
+						"GraphQLAPIEndpointOutput"
 					]
 				}
 			]

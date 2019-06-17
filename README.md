@@ -17,4 +17,5 @@ type Mutation @aws_api_key @aws_iam {
 }
 ```
 
-5. Add IAM and additional authorization mode
+5. Lambda Function Code: amplify/backend/function/backendgraphql52d39904/src/index.js
+6. Add IAM as additional authorization mode

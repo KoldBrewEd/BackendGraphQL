@@ -13,11 +13,17 @@ class App extends Component {
     const ListView = ({ todos }) => (
       <div>
         <h3>All Todos</h3>
-        <ul>
-          {todos.map(todo => (
-            <p key={todo.id}>{todo.name}</p>
-          ))}
-        </ul>
+        <table style={{ width: "100%" }}>
+          <tbody>
+            {todos.map(todo => (
+              <tr key={todo.id}>
+                <td>{todo.id}</td>
+                <td>{todo.name}</td>
+                <td>{todo.description}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     );
 
@@ -28,6 +34,7 @@ class App extends Component {
           subscription={graphqlOperation(subscriptions.onCreateTodo)}
           onSubscriptionMsg={(prev, { onCreateTodo }) => {
             console.log("Subscription data:", onCreateTodo);
+            prev.listTodos.items.push(onCreateTodo);
             return prev;
           }}
         >

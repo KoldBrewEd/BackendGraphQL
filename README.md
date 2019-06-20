@@ -19,3 +19,5 @@ type Mutation @aws_api_key @aws_iam {
 
 5. Lambda Function Code: amplify/backend/function/backendgraphql52d39904/src/index.js
 6. Add IAM as additional authorization mode
+7. amplify serve
+8. Open http://localhost:3000 on a browser, invoke Lambda from the console and receive the new Todo on the frontend

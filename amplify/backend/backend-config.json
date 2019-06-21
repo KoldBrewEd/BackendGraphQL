@@ -9,7 +9,7 @@
 		}
 	},
 	"function": {
-		"backendgraphql52d39904": {
+		"BackendGraphQL": {
 			"service": "Lambda",
 			"providerPlugin": "awscloudformation",
 			"build": true,

@@ -91,10 +91,10 @@
 				}
 			}
 		},
-		"functionbackendgraphql52d39904": {
+		"functionBackendGraphQL": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
-				"TemplateURL": "https://s3.amazonaws.com/backend-graphql-master-20190610091720-deployment/amplify-cfn-templates/function/backendgraphql52d39904-cloudformation-template.json",
+				"TemplateURL": "https://s3.amazonaws.com/backend-graphql-master-20190610091720-deployment/amplify-cfn-templates/function/BackendGraphQL-cloudformation-template.json",
 				"Parameters": {
 					"apibackendGraphQLGraphQLAPIIdOutput": {
 						"Fn::GetAtt": [

@@ -1,6 +1,7 @@
 {
     "AppSyncApiName": "backendGraphQL",
     "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "APIKeyExpirationEpoch": "0",
     "S3DeploymentBucket": "backend-graphql-master-20190610091720-deployment",
-    "S3DeploymentRootKey": "amplify-appsync-files/0de9aa05cc3935eb1f381811d03c9a161bf5b3b0"
+    "S3DeploymentRootKey": "amplify-appsync-files/bbd8180b3c87a5f56fb033941bcd51ed37968e92"
 }

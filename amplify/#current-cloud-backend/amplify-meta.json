@@ -17,20 +17,20 @@
 			"providerPlugin": "awscloudformation",
 			"output": {
 				"securityType": "API_KEY",
-				"GraphQLAPIIdOutput": "dwnxyntvp5dqnbvgro4j32ppfy",
-				"GraphQLAPIEndpointOutput": "https://7a6ludhzing4jnzfs5t6lzonpm.appsync-api.us-east-1.amazonaws.com/graphql",
-				"GraphQLAPIKeyOutput": "da2-q7xnybft7bcwdi365ggxk7clpa"
+				"GraphQLAPIIdOutput": "wyywbrknnvhtfoa2ndw7c6cntm",
+				"GraphQLAPIEndpointOutput": "https://rvtknnsgvrbqrpzacu2hyh4uqu.appsync-api.us-east-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-p5gubwntorh5hjr7eu234jhpci"
 			},
 			"providerMetadata": {
 				"s3TemplateURL": "https://s3.amazonaws.com/backend-graphql-master-20190610091720-deployment/amplify-cfn-templates/api/cloudformation-template.json",
 				"logicalId": "apibackendGraphQL"
 			},
-			"lastPushTimeStamp": "2019-06-11T23:39:23.255Z",
-			"lastPushDirHash": "GFufjz2Mah+RxFsG5wqNXVWog14="
+			"lastPushTimeStamp": "2019-06-21T17:57:45.328Z",
+			"lastPushDirHash": "Ad7XcxNQcWEKwRBGqxP7bqp+sRk="
 		}
 	},
 	"function": {
-		"backendgraphql52d39904": {
+		"BackendGraphQL": {
 			"service": "Lambda",
 			"providerPlugin": "awscloudformation",
 			"build": true,
@@ -44,20 +44,20 @@
 					]
 				}
 			],
-			"lastBuildTimeStamp": "2019-06-11T23:35:42.929Z",
-			"lastPackageTimeStamp": "2019-06-11T23:35:47.723Z",
-			"distZipFilename": "backendgraphql52d39904-1560296142-latest-build.zip",
+			"lastBuildTimeStamp": "2019-06-21T17:47:45.397Z",
+			"lastPackageTimeStamp": "2019-06-21T17:56:09.889Z",
+			"distZipFilename": "BackendGraphQL-1561139769-latest-build.zip",
 			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/backend-graphql-master-20190610091720-deployment/amplify-cfn-templates/function/backendgraphql52d39904-cloudformation-template.json",
-				"logicalId": "functionbackendgraphql52d39904"
+				"s3TemplateURL": "https://s3.amazonaws.com/backend-graphql-master-20190610091720-deployment/amplify-cfn-templates/function/BackendGraphQL-cloudformation-template.json",
+				"logicalId": "functionBackendGraphQL"
 			},
-			"lastPushTimeStamp": "2019-06-11T23:39:23.255Z",
+			"lastPushTimeStamp": "2019-06-21T17:57:45.330Z",
 			"output": {
 				"Region": "us-east-1",
-				"Arn": "arn:aws:lambda:us-east-1:244958302947:function:backendGraphQL-master",
-				"Name": "backendGraphQL-master"
+				"Arn": "arn:aws:lambda:us-east-1:244958302947:function:BackendGraphQL-master",
+				"Name": "BackendGraphQL-master"
 			},
-			"lastPushDirHash": "iVHokesCyym/avXVvwQOJqwO3HE="
+			"lastPushDirHash": "ho1E8zOHSvEUM66fQfsALCVXi3Y="
 		}
 	}
 }

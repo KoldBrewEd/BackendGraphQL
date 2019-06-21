@@ -1,3 +1,5 @@
+![Overview](backendGraphQL-small.gif)
+
 1. amplify init
 2. amplify add api (Todos)
 3. amplify add function (Create and Update permissions to API)
